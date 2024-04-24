@@ -19,25 +19,24 @@ html, body {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     border-radius: 10px;
     width: 80vw;
-    max-width: 500px; /* Ajuste de ancho máximo para evitar que sea demasiado grande en pantallas más anchas */
-    height: auto; /* Altura automática para ajustar el contenido */
-    min-height: 60vh;
+    max-width: 400px; /* Reducido para evitar que sea demasiado grande */
+    min-height: 70vh; /* Aumentado para contener los botones verticalmente */
     text-align: center;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around; /* Espacio uniforme entre elementos */
 }
 
 p {
-    font-size: xx-large;
+    font-size: large; /* Ajustado para dispositivos móviles */
     color: #333;
-    margin: 20px 0;
+    margin: 10px 0; /* Reducido para más espacio vertical */
 }
 
 button {
-    font-size: xx-large;
-    padding: 1em 2em;
+    font-size: medium; /* Más pequeño para ajustarse a pantallas más estrechas */
+    padding: 0.75em 1.5em;
     color: white;
     background-color: #ff5f6d;
     border: none;
@@ -50,29 +49,19 @@ button:hover {
     background-color: #ff2e63;
 }
 
-#yesBtn {
-    margin-right: 20px;
-}
-
-#noBtn {
-    position: absolute;
-}
-
 @media (max-width: 600px) {
     .contenedor {
         width: 90vw; /* Más ancho en pantallas pequeñas para mejor uso del espacio */
-        min-height: 50vh; /* Ajuste para que no sea demasiado alto en pantallas pequeñas */
-    }
-    
-    p, button {
-        font-size: large; /* Texto más pequeño para evitar desbordamiento */
-    }
-    
-    button {
-        padding: 0.75em 1.5em; /* Menos padding para ahorrar espacio */
+        min-height: 80vh; /* Más alto para acomodar diseño vertical */
     }
 
-    #yesBtn, #noBtn {
-        margin: 10px 0; /* Adaptación para botones en pantallas pequeñas */
+    p, button {
+        font-size: medium; /* Tamaño de texto ajustado para pantallas pequeñas */
+    }
+
+    button {
+        margin: 10px auto; /* Espacio alrededor de los botones y centrado horizontalmente */
+        display: block; /* Los botones se muestran en bloque */
+        width: 80%; /* Ancho relativo para mantener los botones dentro del contenedor */
     }
 }
