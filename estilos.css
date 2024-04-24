@@ -1,67 +1,31 @@
-* {
+*{
     margin: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
 }
 
-html, body {
+.contenedor{
+    background: linear-gradient(135deg, rgba(255, 182, 193, 0.9), rgba(253, 253, 150, 0.8));
     width: 100vw;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, rgba(255, 182, 193, 0.9), rgba(253, 253, 150, 0.8));
-    font-family: 'Georgia', serif;
-}
-
-.contenedor {
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    border-radius: 10px;
-    width: 80vw;
-    max-width: 400px; /* Reducido para evitar que sea demasiado grande */
-    min-height: 70vh; /* Aumentado para contener los botones verticalmente */
     text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around; /* Espacio uniforme entre elementos */
 }
 
-p {
-    font-size: large; /* Ajustado para dispositivos móviles */
-    color: #333;
-    margin: 10px 0; /* Reducido para más espacio vertical */
+p{
+    font-size: xx-large;
+    padding: 15%;
 }
 
-button {
-    font-size: medium; /* Más pequeño para ajustarse a pantallas más estrechas */
-    padding: 0.75em 1.5em;
+button{
+    font-size: xx-large;
+    padding: 0.75em;
     color: white;
-    background-color: #ff5f6d;
-    border: none;
+    background-color: #e765af;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #ff2e63;
+#yesBtn{
+    transform: translate(-100%,0);
 }
 
-@media (max-width: 600px) {
-    .contenedor {
-        width: 90vw; /* Más ancho en pantallas pequeñas para mejor uso del espacio */
-        min-height: 80vh; /* Más alto para acomodar diseño vertical */
-    }
-
-    p, button {
-        font-size: medium; /* Tamaño de texto ajustado para pantallas pequeñas */
-    }
-
-    button {
-        margin: 10px auto; /* Espacio alrededor de los botones y centrado horizontalmente */
-        display: block; /* Los botones se muestran en bloque */
-        width: 80%; /* Ancho relativo para mantener los botones dentro del contenedor */
-    }
+#noBtn{
+    position: absolute;
 }
