@@ -1,62 +1,57 @@
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: 'Georgia', serif; /* Elegant font for a romantic feel */
-}
-
-body, html {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  html, body {
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     background: linear-gradient(135deg, rgba(255, 182, 193, 0.9), rgba(253, 253, 150, 0.8)); /* Soft color gradient */
-}
-
-.contenedor {
-    width: 90%;
-    max-width: 600px; /* Makes it look good on all devices */
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+    font-family: 'Georgia', serif; /* Elegant font for a romantic feel */  }
+  
+  .contenedor {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparente para dar un efecto suave */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Sombra para un efecto 3D ligero */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 80vw;
+    height: 60vh;
     text-align: center;
-    transition: all 0.3s ease-in-out;
-}
-
-p {
-    font-size: 1.5em; /* Adjusted font size */
-    margin-bottom: 20px; /* Spacing for better layout */
-    color: #333; /* Softer text color for better readability */
-}
-
-.buttons-container {
-    display: flex; /* Aligns buttons next to each other */
-    justify-content: center; /* Centers the buttons within the container */
-    gap: 20px; /* Adds space between buttons */
-}
-
-button {
-    font-size: 1em; /* Standard font size for buttons */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    background-color: #ff69b4; /* Light pink for romance */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  p {
+    font-size: xx-large;
+    color: #333; /* Un color más suave que el negro completo */
+    margin: 20px 0; /* Añade espacio arriba y abajo */
+  }
+  
+  button {
+    font-size: xx-large;
+    padding: 1em 2em;
     color: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-button:hover {
-    background-color: #ff1493; /* Deeper pink on hover */
-    transform: scale(1.05); /* Slight increase in size */
-}
-
-#yesBtn {
-    margin-right: 350px; /* Moves the "Yes" button slightly to the left */
-}
-
-#noBtn {
+    background-color: #ff5f6d; /* Un color romántico y llamativo */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Hace que el cursor sea un puntero cuando pasa sobre el botón */
+    transition: background-color 0.3s; /* Transición suave para el hover */
+  }
+  
+  button:hover {
+    background-color: #ff2e63; /* Cambio de color al pasar el mouse */
+  }
+  
+  #yesBtn {
+    margin-right: 20px; /* Añade espacio a la derecha */
+  }
+  
+  #noBtn {
 position: absolute;
-}
+  }
+  
